@@ -1,0 +1,26 @@
+name: ABAP Project CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run ABAP Syntax Check (simulation)
+        run: |
+          echo "Simulating ABAP syntax check for ${{ github.repository }}"
+          echo "Checking ZFLIGHT_REPORT.abap..."
+          if [ -f "ZFLIGHT_REPORT.abap" ]; then
+            echo "ABAP report found ✅"
+          else
+            echo "No ABAP file found ❌"
+            exit 1
+          fi
