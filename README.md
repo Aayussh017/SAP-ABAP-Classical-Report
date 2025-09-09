@@ -1,6 +1,6 @@
 # SAP ABAP Classical Report - Flight Information
 
-![ABAP Project CI](https://github.com/<your-username>/<your-repo-name>/actions/workflows/abap-project-ci.yml/badge.svg)
+![ABAP Project CI](https://github.com/Aayussh017/SAP-ABAP-Classical-Report/actions/workflows/abap-project-ci.yml/badge.svg)
 
 ## 📌 Overview
 This project is a **Classical Report in SAP ABAP** that retrieves flight data from the `SFLIGHT` table 
